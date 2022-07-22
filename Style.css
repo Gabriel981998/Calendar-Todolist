@@ -1,0 +1,203 @@
+body {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  html{
+    background-image: url(/back3.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+  }
+  .nextandBack{
+    width: 10px;
+    color: white;
+  }
+  button {
+    width: 75px;
+    cursor: pointer;
+    box-shadow: 0px 0px 2px gray;
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+  }
+  #header {
+    padding: 10px;
+    color: #fc0606;
+    font-size: 26px;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-between;
+    font-family: cursive;
+  }
+  #header button {
+    margin: 10px;
+    background: none;
+    border: 1px solid white;
+    font-family: cursive;
+  }
+  #header button:hover{
+    background-color:#f00a0a;
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+  #container {
+    width: 770px;
+   
+  }
+  #weekdays {
+    width: 100%;
+    display: flex;
+    color: #f7f2f2;
+    font-family: cursive;
+   background-color: #383737;
+   padding: 5px;
+  }
+  #weekdays :hover {
+    color:#ec940f;
+    transform: scale(1.1);
+    
+  }
+  
+  #weekdays div {
+    width: 100px;
+    padding: 10px;
+  }
+  #calendar {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #calendar div {
+   height: 110px;
+  }
+  .day {
+    width: 100px;
+    padding: 10px;
+    height: 100px;
+    cursor: pointer;
+    box-sizing: border-box;
+    background-color: white;
+    margin: 5px;
+    box-shadow: 0px 0px 3px #CBD4C2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 5px;
+  }
+  .day:hover {
+    background-color: #e8faed;
+  }
+  .day + #currentDay {
+    background-color:#fc0000;
+    color: white;
+  }
+  .event {
+    font-size: 10px;
+    padding: 5px;
+   padding-right: 1px;
+    background-color:white;
+    border: 1px solid rgb(190, 188, 188);
+    color: rgb(255, 11, 6);
+    border-radius: 8px;
+    font-family: cursive;
+    width: 75px;
+    max-height: 55px;
+    overflow: hidden;
+  }
+  .padding {
+   background: transparent;
+  }
+  
+  #newEventModal, #deleteEventModal {
+    display: none;
+    color: white;
+    z-index: 20;
+    padding: 25px;
+    background-image: url(/back3.webp);
+    box-shadow: 0px 0px 3px rgb(20, 20, 20);
+    border-radius: 10px;
+    width: 350px;
+    top: 100px;
+    left: calc(50% - 175px);
+    position: absolute;
+    font-family: cursive;
+  }
+  #deleteEventModal:hover{
+    transform: scale(1.1);
+  }
+  #eventTitleInput {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 3px gray;
+  }
+  .smileface{
+    width: 50px;
+  }
+  #eventTitleInput.error {
+    border: 2px solid red;
+  }
+  #cancelButton, #deleteButton {
+    background-color: #ec0f0f;
+    font-family: cursive;
+     margin-left:100px;
+    padding: 6px;
+  }
+  #saveButton,#closeButton {
+    background-color: #0f0f0f;
+    font-family: cursive;
+    margin: 9px;
+    border: 2px solid white;
+  }
+ #deleteButton:hover{
+  transform: scale(1.1);
+ }
+ #closeButton:hover {
+  transform: scale(1.1);
+ }
+  #saveButton:hover{
+    transform: scale(1.2);
+  }
+  #cancelButton:hover{
+transform: scale(1.2);
+  }
+  #eventText {
+    font-size: 14px;
+  }
+  #modalBackDrop {
+    display: none;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    width: 110vw;
+    height: 120vh;
+    position: absolute;
+    background-color: rgba(0,0,0,0.8);
+  }
+  .savebnt{
+    width: 15px;
+  }
+  .savebnt:hover{
+    width: 15px;
+   
+  }
+  .saveAndCancel{
+    margin-left: 5px;
+    width: 10px;
+  }
+  .saveAndCancel:hover{
+    margin-left: 5px;
+    width: 10px;
+    transform: scale(1.3);
+  }

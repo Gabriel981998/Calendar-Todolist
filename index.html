@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar App Vanilla JS</title>
+   
+
+    <link rel="stylesheet" href="Style.css">
+  </head>
+  <body>
+    
+    <div id="container">
+      <div id="header">
+        <div id="monthDisplay"></div>
+        <div>
+          <button id="backButton"><img  class ="nextandBack" src="/back.png" alt="">Back</button>
+          <button id="nextButton">Next<img  class ="nextandBack" src="/next.png" alt=""></button>
+        </div>
+      </div>
+
+      <div id="weekdays">
+        <div>Sunday</div>
+        <div>Monday</div>
+        <div>Tuesday</div>
+        <div>Wednesday</div>
+        <div>Thursday</div>
+        <div>Friday</div>
+        <div>Saturday</div>
+      </div>
+
+      <div id="calendar"></div>
+    </div>
+
+    <div id="newEventModal">
+      <h2>Hi Gabe please add a event:</h2>
+      
+      <img  class ="smileface" src="/happy.gif" alt="">
+
+      <input id="eventTitleInput" placeholder="Write event..." />
+
+      <button id="saveButton">Save<img  class ="savebnt" src="/check.png" alt=""></button>
+      <button id="cancelButton">Cancel<img  class ="saveAndCancel" src="/close.png" alt=""></button>
+    </div>
+
+    <div id="deleteEventModal">
+      <h2>Event:</h2>
+
+      <p id="eventText"></p>
+
+      <button id="deleteButton">Delete</button>
+      <button id="closeButton">Close</button>
+    </div>
+
+    <div id="modalBackDrop"></div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
