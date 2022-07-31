@@ -16,6 +16,12 @@ body {
     width: 10px;
     color: white;
   }
+  .ALLCONTAINER{
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   button {
     width: 75px;
     cursor: pointer;
@@ -28,12 +34,13 @@ body {
   }
   #header {
     padding: 10px;
-    color: #fc0606;
-    font-size: 26px;
-    font-family: sans-serif;
+    color: #ff0b0b;
+    font-size: 46px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     display: flex;
     justify-content: space-between;
     font-family: cursive;
+   
   }
   #header button {
     margin: 10px;
@@ -48,7 +55,11 @@ body {
   }
   #container {
     width: 770px;
+    
    
+  }
+  .input{
+    margin-top: 30px;
   }
   #weekdays {
     width: 100%;
@@ -57,6 +68,11 @@ body {
     font-family: cursive;
    background-color: #383737;
    padding: 5px;
+   border: solid 2px white;
+  
+  
+   
+   
   }
   #weekdays :hover {
     color:#ec940f;
@@ -92,21 +108,21 @@ body {
     border-radius: 5px;
   }
   .day:hover {
-    background-color: #e8faed;
+    background-color: #c5dfe0;
   }
   .day + #currentDay {
-    background-color:#fc0000;
+    background-color:hwb(0 7% 15%);
     color: white;
   }
   .event {
-    font-size: 10px;
-    padding: 5px;
+    font-size: 12px;
+    padding: 8px;
    padding-right: 1px;
-    background-color:white;
+    background-color:rgb(255, 0, 55);
     border: 1px solid rgb(190, 188, 188);
-    color: rgb(255, 11, 6);
+    color: rgb(255, 255, 255);
     border-radius: 8px;
-    font-family: cursive;
+    font-family: sans-serif;
     width: 75px;
     max-height: 55px;
     overflow: hidden;
@@ -144,6 +160,8 @@ body {
   }
   .smileface{
     width: 50px;
+    border-radius: 15px;
+    
   }
   #eventTitleInput.error {
     border: 2px solid red;
@@ -155,10 +173,11 @@ body {
     padding: 6px;
   }
   #saveButton,#closeButton {
-    background-color: #0f0f0f;
+    background-color: #078007;
     font-family: cursive;
     margin: 9px;
     border: 2px solid white;
+   
   }
  #deleteButton:hover{
   transform: scale(1.1);
