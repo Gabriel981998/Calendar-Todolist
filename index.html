@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calendar App Vanilla JS</title>
+  
+
    
 
     <link rel="stylesheet" href="Style.css">
@@ -16,6 +18,7 @@
           <div>
             <button id="backButton"><img  class ="nextandBack" src="/back.png" alt="">Back</button>
             <button id="nextButton">Next<img  class ="nextandBack" src="/next.png" alt=""></button>
+            <button id="Allevents"  onclick="show()">Events</button>
           </div>
         </div>
   
@@ -52,17 +55,36 @@
 
       <button id="deleteButton">Delete</button>
       <button id="closeButton">Close</button>
+      <button id ></button>
     </div>
+
+
+  
+
+
 
     <div id="modalBackDrop"></div>
 
 
 
     </div>
+  
+    <table  id ="table-striped" class="table table-striped">
+      <tr  class="bg-info">
+          <th   data-colname="name" data-order="desc">Events: </th>
+          <th  class="dateinfo" data-colname="age" data-order="desc">Date :</th>
+         
+         
+      </tr>
+      
+      <tbody id="myTable">
+        
+      </tbody>
+  
+  </table>
     
 
-
-    
+  
     <script src="./script.js"></script>
   </body>
 </html>
